@@ -1,0 +1,41 @@
+body {
+  margin: 0px;
+  text-align: center;
+  background: grey;
+}
+
+h1 {
+  color: white;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.bottom {
+  margin-bottom: 10px;
+}
+.noscriptmsg {
+  position:relative;
+  z-index: 20;
+  color: red;
+  font-size: 20px;
+  top: 0px;
+  margin: 250px auto;
+}
+div.load-screen {
+  background: white
+  opacity: 1;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+div.preloader-wrapper {
+  z-index: 11;
+  margin: 300px auto;
+}
