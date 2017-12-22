@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-require_once('connect.php');
+require_once('php/connect.php');
 ?>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,7 +59,7 @@ require_once('connect.php');
     </nav>
     <!-- form for sending data to login php function-->
     <section class="loginform">
-    <form name="login" action="login.php" method="post" accept-charset="utf-8">
+    <form name="login" action="php/login.php" method="post" accept-charset="utf-8">
       <div>
         <div><label>Username</label>
           <input  type="text" name="username" placeholder="username" required>

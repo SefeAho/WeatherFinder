@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
- require_once('connect.php');
+ require_once('php/connect.php');
 ?>
 
 <head>
@@ -61,7 +61,7 @@
               <!-- Different view depending on whether user has logged in -->
               <?php
                 if (isset($_SESSION['username'])) {
-                  echo "<li><a class='right' href='logout.php'>Logout</a></li>";
+                  echo "<li><a class='right' href='php/logout.php'>Logout</a></li>";
                 }
                 else {
                   echo "<li><a class='right' href='loginPage.php'>Login</a></li>";
@@ -75,7 +75,7 @@
               <!-- Different view depending on whether user has logged in -->
               <?php
                 if (isset($_SESSION['username'])) {
-                  echo "<li><a class='waves-effect white-text' href='logout.php'>Logout</a></li>";
+                  echo "<li><a class='waves-effect white-text' href='php/logout.php'>Logout</a></li>";
                 }
                 else {
                   echo "<li><a class='waves-effect white-text' href='loginPage.php'>Login</a></li>";
@@ -85,7 +85,7 @@
           </div>
         </nav>
           <!-- form used to send both location names to php file with that aqcuires weather data-->
-        <form class="weatherSearch send col s12" action="weatherData.php" method="POST" >
+        <form class="weatherSearch send col s12" action="php/weatherData.php" method="POST" >
           <br><br>
           <div class='input-field'>
             <i class="medium material-icons prefix">landscape</i>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
- require_once('connect.php');
+ require_once('php/connect.php');
 ?>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -78,7 +78,7 @@
               <!-- Different view depending on whether user has logged in -->
               <?php
                 if (isset($_SESSION['username'])) {
-                  echo "<li><a class='right' href='logout.php'>Logout</a></li>";
+                  echo "<li><a class='right' href='php/logout.php'>Logout</a></li>";
                 }
                 else {
                   echo "<li><a class='right' href='loginPage.php'>Login</a></li>";
@@ -93,7 +93,7 @@
               <!-- again different view if logged in or not-->
               <?php
                 if (isset($_SESSION['username'])) {
-                  echo "<li><a class='waves-effect white-text' href='logout.php'>Logout</a></li>";
+                  echo "<li><a class='waves-effect white-text' href='php/logout.php'>Logout</a></li>";
                 }
                 else {
                   echo "<li><a class='waves-effect white-text' href='loginPage.php'>Login</a></li>";
@@ -103,7 +103,7 @@
           </div>
         </nav>
         <!-- form used to send location name to php file that aqcuires weather data--->
-        <form class="weatherSearch send col s12" action="weatherData.php" method="POST" >
+        <form class="weatherSearch send col s12" action="php/weatherData.php" method="POST" >
           <br><br>
           <div class='input-field '>
             <i class="medium material-icons prefix">landscape</i>
@@ -132,8 +132,8 @@
             if (isset($_SESSION['username'])) {
               echo "<a class='bottom btn blue-grey darken-3 waves-effect waves-light right' onclick='HTMLtoPDF()'>Download PDF</a>";
               if (isset($_SESSION['city'])) {
-                echo "<a href='addFavorite.php' class='bottom addFavorite btn blue-grey darken-3 waves-effect waves-light left'>Favorite</a>";
-                echo "<a href='deleteFavorite.php' class='bottom deleteFavorite btn blue-grey darken-3 waves-effect waves-light'>Remove Favorite</a>";
+                echo "<a href='php/addFavorite.php' class='bottom addFavorite btn blue-grey darken-3 waves-effect waves-light left'>Favorite</a>";
+                echo "<a href='php/deleteFavorite.php' class='bottom deleteFavorite btn blue-grey darken-3 waves-effect waves-light'>Remove Favorite</a>";
               } else {
                 echo "<a class='bottom btn blue-grey darken-3 waves-effect waves-light left'>Favorite</a>";
                 echo "<a class='bottom btn blue-grey darken-3 waves-effect waves-light'>Remove Favorite</a>";

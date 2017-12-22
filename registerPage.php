@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
- require_once('connect.php');
+ require_once('php/connect.php');
 ?>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,7 +59,7 @@
     </nav>
     <!-- form for sending data to registering php function-->
     <section class="createform">
-    <form name="register" action="register.php" method="post" accept-charset="utf-8">
+    <form name="register" action="php/register.php" method="post" accept-charset="utf-8">
       <div>
         <div><label>New Username</label>
           <input  type="text" name="username" placeholder="username" required>
@@ -68,7 +68,7 @@
           <input type="password" name="password" placeholder="password" required>
         </div>
         <div>
-          <input action="register.php" class="btn blue-grey darken-3 waves-effect waves-light create" type="submit" value="Create Account">
+          <input action="php/register.php" class="btn blue-grey darken-3 waves-effect waves-light create" type="submit" value="Create Account">
         </div>
       </div>
     </form>
